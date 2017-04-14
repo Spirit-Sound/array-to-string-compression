@@ -1,0 +1,24 @@
+{
+  "name": "array-to-string-compression",
+  "version": "0.1.0",
+  "description": "Compression array and convert it to string",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "author": "Nikolay",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Spirit-Sound/array-to-string-compression"
+  },
+  "keywords": [
+    "compression",
+    "array",
+    "string"
+  ],
+  "dependencies": {
+    "mocha": "^3.2.0"
+  }
+}
