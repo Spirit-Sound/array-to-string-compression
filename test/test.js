@@ -1,5 +1,5 @@
 var assert = require('assert');
-var arrayToStringCompression = require('../index.js');
+var arrayToString = require('../index.js');
 
 describe('Test', function() {
 
@@ -11,11 +11,11 @@ describe('Test', function() {
 
         var correctResult = '1-5,7-9,12,18,29-32,34,39-40,48,50-54,58-60,120,380-386,1001-1002,1100,1111-1114,1900';
 
-        arrayToStringCompression(array, (err, compressedArray) => {
+        arrayToString(array, function (err, result) {
             if (err) {
                 throw err;
             } else {
-                if (compressedArray && compressedArray == correctResult) {
+                if (result == correctResult) {
                     done()
                 } else {
                     throw new Error('Wrong result returned');

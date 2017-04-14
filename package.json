@@ -1,19 +1,20 @@
 {
-  "name": "array-to-string-compression",
+  "name": "array-to-string-encoding",
   "version": "1.0.0",
   "description": "Compression array and convert it to string",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "author": "Nikolay",
+  "author": "SpiritSound",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Spirit-Sound/array-to-string-compression"
+    "url": "https://github.com/Spirit-Sound/array-to-string-encoding"
   },
   "keywords": [
     "compression",
+    "encoding",
     "array",
     "string"
   ],

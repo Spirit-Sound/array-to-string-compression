@@ -13,13 +13,13 @@ module.exports = function (array, callback) {
 
     var pushChunk = function (start, end) {
         if (start == end){
-            compressedArray.push(array[start]);
+            encodingArray.push(array[start]);
         } else {
-            compressedArray.push(array[start] + "-" + array[end]);
+            encodingArray.push(array[start] + "-" + array[end]);
         }
     };
 
-    var compressedArray = [], start = 0, length = array.length;
+    var encodingArray = [], start = 0, length = array.length;
 
     for (var i = 1; i < length; i++) {
 
@@ -32,5 +32,5 @@ module.exports = function (array, callback) {
 
     pushChunk(start, i-1);
 
-    callback(null, compressedArray.join(','));
+    callback(null, encodingArray.join(','));
 };
